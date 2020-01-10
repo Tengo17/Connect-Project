@@ -175,9 +175,9 @@ header {
   z-index: -1;
   background-color: white;
   width: 50px;
-  height: 570px;
+  height: 530px;
   position: relative; 
-  top: 255px;
+  top: 235px;
   left: 465px;
 }
 .lines {
@@ -188,32 +188,32 @@ header {
 .line1 {
   position: relative;
   left: 22px;
-  top: 7px;
+  top: 10px;
   width: 5px;
   height: 29px;
   background-color: #B12634;
   transform:  rotate(90deg);
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .line2 {
   position: relative;
   left: 22px;
-  bottom: 16px;
+  bottom: 13px;
   width: 5px;
   height: 36px;
   background-color: #B12634;
   transform: rotate(90deg);
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .line3 {
   position: relative;
   left: 22px;
-  bottom: 39.3px;
+  bottom: 36.3px;
   width: 5px;
   height: 29px;
   background-color: #B12634;
   transform:  rotate(90deg);
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .dropbtn {
   position: relative;
@@ -229,14 +229,14 @@ header {
 
 .dropdown {
   position: relative;
-  top: 70px;
+  top: 80px;
   display: inline-block;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 25px;
+  top: 35px;
   width: 50px;
   overflow: auto;
   z-index: 1;
@@ -273,4 +273,17 @@ color: #B08760;
 }
 .language:hover {
   background-color: white;
+}
+.social {
+  position: relative;
+  top: 150px;
+  left: 15px;
+  display: flex;
+  width: 22px;
+  height: 60px;
+
+
+}
+.social li img {
+  padding-bottom: 10px;
 }
