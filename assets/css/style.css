@@ -9,7 +9,8 @@ html {
 }
 
 body{
-	max-width: 1084px; 
+  background-color: #E6E3E0;
+	max-width: 1280px; 
 	margin: 0 auto;
 	overflow-x: hidden;
 }
@@ -126,4 +127,150 @@ body{
 
 #bigloading.ready {
   background: rgba(255, 255, 255, 0);
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+.nav-info {
+  position: relative;
+  left: 100px;
+}
+.nav-info ul {
+  width: 300px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.nav-info ul li {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  cursor: pointer;
+}
+.nav-info ul li:hover {
+  color: #B12634;
+  transition: 400ms color ease;
+}
+.phone-number {
+  font-family: 'segoe';
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 10px;
+
+}
+.whatsapp {
+  border-left: 2px solid #B12634;
+  padding-left: 15px;
+}
+.app {
+  font-family: 'segoe';
+  font-weight: bold;
+  padding-left: 10px;
+}
+.side-bar  {
+  z-index: -1;
+  background-color: white;
+  width: 50px;
+  height: 570px;
+  position: relative; 
+  top: 255px;
+  left: 465px;
+}
+.lines {
+  width: 36px;
+  height: 27px;
+}
+
+.line1 {
+  position: relative;
+  left: 22px;
+  top: 7px;
+  width: 5px;
+  height: 29px;
+  background-color: #B12634;
+  transform:  rotate(90deg);
+  border-radius: 10px;
+}
+.line2 {
+  position: relative;
+  left: 22px;
+  bottom: 16px;
+  width: 5px;
+  height: 36px;
+  background-color: #B12634;
+  transform: rotate(90deg);
+  border-radius: 10px;
+}
+.line3 {
+  position: relative;
+  left: 22px;
+  bottom: 39.3px;
+  width: 5px;
+  height: 29px;
+  background-color: #B12634;
+  transform:  rotate(90deg);
+  border-radius: 10px;
+}
+.dropbtn {
+  position: relative;
+  right: 1px;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.dropdown {
+  position: relative;
+  top: 70px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 25px;
+  width: 50px;
+  overflow: auto;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-family: 'segoe';
+  font-weight: bold;
+  font-size: 14px;
+  position: relative;
+  right: 3px;
+  color: #B08760;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  color: #B12634;
+}
+
+.show {
+  display: block;
+}
+.language {
+text-decoration: none;
+font-family: 'segoe';
+font-weight: bold;
+font-size: 14px;
+position: absolute;
+left: 12px;
+bottom: 40px;
+color: #B08760;
+}
+.language:hover {
+  background-color: white;
 }
