@@ -10,7 +10,7 @@ html {
 
 body{
   background-color: #E6E3E0;
-	max-width: 1280px; 
+	max-width: 100%; 
 	margin: 0 auto;
 	overflow-x: hidden;
 }
@@ -24,7 +24,7 @@ body{
   position: absolute;
   top: 50%;
   left: 50%;
-  border: #cacdd3 2px solid;
+  border: #E6E3E0 2px solid;
   border-radius: 25px;
   margin-top: -21px;
   margin-left: -104px;
@@ -56,17 +56,19 @@ body{
 }
 
 #loading li:nth-child(1) {
-  background: #f5a6ac
+  background: #B12634;
 }
 
 #loading li:nth-child(2) {
-  background: #fc6c77
+  background: #B08760;
 }
 
 #loading li:nth-child(3) {
-  background: #fd4250
+  background: #1A1818;
 }
-
+#loading li:nth-child(4) {
+  background: #C0B5B1;
+}
 
 @keyframes translate {
   0% {
@@ -113,12 +115,12 @@ body{
 
 #bigloading.ready #lefthalf {
   left: -100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: #B08760;
 }
 
 #bigloading.ready #righthalf {
   right: -100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: #C0B5B1;
 }
 
 #bigloading.ready #loading {
@@ -128,6 +130,7 @@ body{
 #bigloading.ready {
   background: rgba(255, 255, 255, 0);
 }
+
 header {
   display: flex;
   justify-content: center;
@@ -172,13 +175,13 @@ header {
   padding-left: 10px;
 }
 .side-bar  {
-  z-index: -1;
+  z-index: 0;
   background-color: white;
   width: 50px;
   height: 530px;
-  position: relative; 
-  top: 235px;
-  left: 465px;
+  position: absolute; 
+  top: 0;
+  right: 0;
 }
 .lines {
   width: 36px;
@@ -332,18 +335,74 @@ color: #B08760;
   position: relative;
   top: 2px;
   left: 2px;
+  cursor: pointer;
 }
 .toggle-btn.active > .inner-circle > .live-circle {
   background-color: #B12634;
   transition: all 300ms ease-in-out;
 
 }
-.live-text {
+.normal {
+  letter-spacing: 1px;
+  z-index: -1;
   position: absolute;
   top: 470px;
-  left: 12px;
+  left: 11px;
   font-family: 'segoe';
   font-size: 14px;
   font-weight: bold;
-  color: black;
+  color: #E6E3E0;
+ 
+}
+
+.toggle-btn.active::after {
+  letter-spacing: 1px;
+  z-index: 2;
+  content: 'LIVE';
+  font-size: 14px;
+  font-family: 'segoe';
+  font-weight: bold;
+  position: absolute;
+  transform: rotate(90deg);
+  right: 40px;
+  bottom: -1px;
+}
+.tohome {
+  position: fixed;
+  top: 195px;
+  display: flex;
+  justify-content: flex-end;
+  width: 198px;
+  height: 83px;
+}
+.back {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'segoe';
+  width: 135px;
+  height: 83px;
+  border-left: 2px solid #B12634;
+  cursor: pointer;
+}
+.back:hover {
+  color: #B12634;
+  transition: 400ms color ease;
+}
+.back::before {
+  content: url('../images/Group952.png');
+  position: absolute;
+  left: 40px;
+  top: 60px;
+  cursor: pointer;
+
+}
+.home-image {
+  z-index: -2;
+  width: 79vw;
+  position: relative;
+  left: 18%;
+  top: 90px;
 }
