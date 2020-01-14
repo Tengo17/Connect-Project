@@ -5,6 +5,8 @@ document.body.onload = function(){
     if( !preloader.classList.contains('ready') )
     {
       preloader.classList.add('ready');
+      document.getElementById("page-content").style.display = "block";
+  
     }
   }, 3500)
 }
