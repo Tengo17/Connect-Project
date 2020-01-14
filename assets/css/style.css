@@ -12,8 +12,10 @@ body{
   background-color: #E6E3E0;
 	max-width: 100%; 
 	margin: 0 auto;
-	overflow-x: hidden;
+  overflow-x: hidden;
+
 }
+
 
 @font-face {
 	font-family: 'segoe';
@@ -109,12 +111,14 @@ body{
   position: absolute;
   left: 0;
   top: 0;
+  bottom: 0;
   background: rgba(255, 255, 255, 1);
   transition: background 1s 2s;
   pointer-events:none;
   z-index: 2;
  
 }
+
 
 #bigloading.ready #lefthalf {
   left: -100%;

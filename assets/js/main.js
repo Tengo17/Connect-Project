@@ -8,6 +8,9 @@ document.body.onload = function(){
     }
   }, 3500)
 }
+// scrll
+
+
 
 // dropdown 
 function myFunction() {
