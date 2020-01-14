@@ -783,6 +783,7 @@ cursor: pointer;
   position: relative;
   display: flex;
   flex-direction: row;
+  cursor: pointer;
 
 
 }
@@ -805,11 +806,7 @@ cursor: pointer;
 color: #B12634;
 transition: 200ms ease-in-out;
 }
-.person-list li img:hover    {
-  cursor: pointer;
-  transition: 300ms ease-in-out;
 
-}
 
 
 .persons::-webkit-scrollbar {
@@ -842,14 +839,12 @@ transition: 200ms ease-in-out;
   border: 1px solid black;
   margin-left: 40px;
 }
-.irakli {
-  z-index: -2;
-}
 
 .mamuka:hover + .plus {
   cursor: pointer;
   display: block;
   z-index: 2;
+  
   
 }
 
