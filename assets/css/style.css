@@ -682,7 +682,7 @@ cursor: pointer;
 .infra:hover {
   color: #B12634;
   border-bottom: 4px solid #B12634;
-  transition: 400ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
 .listitems {
   width: 1565px;
@@ -768,7 +768,7 @@ cursor: pointer;
 .teamtext:hover {
   color: #B12634;
   border-bottom: 2px solid #B12634;
-  transition: 400ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
 .persons {
   left: 153px;
@@ -777,6 +777,7 @@ cursor: pointer;
   position: relative;
   top: 380px;
   overflow-x: scroll;
+  z-index: -2;
  
 }
 .person-list {
@@ -784,6 +785,7 @@ cursor: pointer;
   display: flex;
   flex-direction: row;
   cursor: pointer;
+  z-index: 1;
 
 
 }
@@ -843,7 +845,7 @@ transition: 200ms ease-in-out;
 .mamuka:hover + .plus {
   cursor: pointer;
   display: block;
-  z-index: 2;
+
   
   
 }
@@ -852,15 +854,15 @@ transition: 200ms ease-in-out;
 .irakli:hover + .plus2 {
   cursor: pointer;
   display: block;
-  z-index: 2;
 
+  
 }
 
 
 .nino:hover + .plus3 {
   cursor: pointer;
   display: block;
-  z-index: 2;
+
 
 }
 
@@ -868,10 +870,11 @@ transition: 200ms ease-in-out;
 .soso:hover + .plus4 {
   cursor: pointer;
   display: block;
-  z-index: 2;
+ 
 
 }
 .plus {
+
   position: absolute;
   left: 0px;
   top: 0px;
@@ -921,4 +924,308 @@ transition: 200ms ease-in-out;
   top: 144px;
   left: 170px;
   opacity: 1;
+}
+.footer {
+  position: relative;
+  width: 1920px;
+  height: 850px;
+
+}
+iframe {
+position: absolute;
+bottom: 350px;
+left: 217px;
+}
+.mappointer {
+  position: absolute;
+  left: 685px;
+  top: 85px;
+}
+.side-content {
+  width: 328px;
+  height: 350px;
+  position: relative;
+  left: 1440px;
+  top: 55px;
+}
+.wolk {
+  width: 170px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'segoe';
+  color: #B12634;
+  border-bottom: 2px solid #B12634;
+  cursor: pointer;
+}
+.wcar {
+  width: 112px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'segoe';
+  color: #B12634;
+  border-bottom: 2px solid #B12634;
+  cursor: pointer;
+}
+.man {
+  position: absolute;
+  left: 185px;
+  top: 5px;
+}
+.car  {
+  margin-top: 55px;
+}
+.ccar {
+  position: absolute;
+  left: 125px;
+  top: 150px;
+}
+.walking p {
+  font-size: 16px;
+  font-family: 'segoe';
+  font-weight: normal;
+}
+.car p {
+  font-size: 16px;
+  font-family: 'segoe';
+  font-weight: normal;
+}
+.walking span {
+  font-size: 16px;
+  font-family: 'segoe';
+  font-weight: bold; 
+  }
+.car span {
+    font-size: 16px;
+  font-family: 'segoe';
+  font-weight: bold; 
+}
+.get {
+  position: absolute;
+  bottom: -93px;
+  width: 266px;
+  height: 60px;
+  background-color: #B12634;
+  cursor: pointer;
+}
+.location {
+  position: absolute;
+  top: 17px;
+  left: 45px; 
+}
+.gloc { 
+  display: flex;
+  justify-content: flex-end;
+  width: 130px;
+  height: 25px;
+  border-left: 3px solid #B08760;
+  border-radius: 1px;
+  font-size: 16px;
+  font-family: 'segoe';
+  font-weight: normal;
+  color: white;
+  position: relative;
+  left: 95px;
+  top: 18px;
+  line-height: 23px;
+}
+.gloc:hover {
+  color: #B08760;
+  transition: 300ms;
+}
+.subs {
+  position: relative;
+  left: 218px;
+  top: 180px;
+}
+.subs h3 {
+  font-size: 16px;
+  font-family: 'segoe';
+  font-weight: bold;
+  color: #B08760;
+}
+.subs p {
+  font-size: 16px;
+    font-family: 'segoe';
+    font-weight: normal;
+  }
+.forms {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  height: 60px;
+  width: 1490px;
+}
+.forms input {
+  width: 418px;
+  height: 57px;
+}
+input::placeholder {
+  font-size: 16px;
+  color: black;
+  font-family: 'segoe';
+  position: relative;
+  left: 35px;
+}
+
+.submit {
+  width: 113px;
+  height: 60px;
+  font-size: 16px;
+  font-family: 'segoe';
+  font-weight: bold;
+  color: white;
+  background-color: #B08760;
+  border: none;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: #B12634;
+  color: #B08760;
+  transition: 300ms color ease;
+}
+.footer-contact {
+  width: 1858px;
+  height: 139px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+}
+
+.sales {
+    font-size: 16px;
+  font-family: 'segoe';
+  font-weight: bold;
+  color: #B08760;
+  margin-right: 15px;
+}
+.nav-info2 {
+  position: absolute;
+  top: 20px;
+  left: 338px;
+}
+.nav-info2 ul {
+  width: 550px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.nav-info2 ul li {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  cursor: pointer;
+}
+.nav-info2 ul li:hover {
+  color: #B12634;
+  transition: 400ms color ease;
+}
+.address {
+    position: relative;
+  left: 215px;
+  top: 42px;
+  font-size: 16px;
+  font-family: 'segoe';
+  font-weight: bold;
+  color: #B12634;
+}
+.address span {
+  color: black;
+  font-weight: normal;
+}
+.moedani {
+  position: relative;
+  left: 215px;
+  top: 60px;
+  font-size: 16px;
+  font-family: 'segoe';
+  font-weight: normal;
+}
+.moedani span {
+  margin-left: 10px;
+  border-bottom: 1px solid black;
+  height: 10px;
+}
+s {
+  margin-left: 10px;
+}
+.follow {
+  position: absolute;
+  right: 281px;
+  top: 45px;
+  font-size: 16px;
+  font-family: 'segoe';
+  font-weight: bold;
+  color: #B08760;
+}
+.soc-logos {
+  position: absolute;
+  right: 150px;
+  top: 45px;
+}
+.web {
+  font-size: 14px;
+  font-family: 'segoe';
+  font-weight: normal;
+  position: absolute;
+  right: 280px;
+  bottom: 40px;
+}
+.connect {
+  position: absolute;
+  right: 150px;
+  bottom: 40px;
+}
+.colors {
+  width: 1858px;
+  height: 14px;
+
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+.red {
+  width: 465px;
+  height: 14px;
+  background-color: #B12634;
+}
+.gold {
+  width: 465px;
+  height: 14px;
+  background-color: #B08760;
+}
+.black {
+  width: 465px;
+  height: 14px;
+  background-color: #1A1818;
+}
+.silver {
+  width: 465px;
+  height: 14px;
+  background-color: #C0B5B1;
+}
+.top {
+  position: absolute;
+  right: 0;
+  top: 3940px;
+  cursor: pointer;
+}
+.topb {
+  color: black;
+  font-size: 16px;
+  font-family: 'segoe';
+  font-weight: bold;
+  position: absolute;
+  right: 3px;
+  bottom: 20px;
+
+}
+.topb:hover {
+  color: #B12634;
+  transition: 300ms color ease;
+}
+.arrowup {
+  position: relative;
+  right: 5px;
 }
