@@ -2,7 +2,7 @@
 document.body.onload = function(){
   setTimeout(function() {
     var preloader = document.getElementById('bigloading');
-    if( !preloader.classList.contains('ready') )
+    if( !preloader.classList.contains('ready') );
     {
       preloader.classList.add('ready');
       document.getElementById("page-content").style.display = "block";

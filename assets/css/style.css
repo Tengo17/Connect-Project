@@ -784,7 +784,6 @@ cursor: pointer;
   position: relative;
   display: flex;
   flex-direction: row;
-  cursor: pointer;
   z-index: 1;
 
 
@@ -840,6 +839,9 @@ transition: 200ms ease-in-out;
   height: 370px
   border: 1px solid black;
   margin-left: 40px;
+}
+.person-list li img {
+  cursor: pointer;
 }
 
 .mamuka:hover + .plus {
