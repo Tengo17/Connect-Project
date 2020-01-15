@@ -977,7 +977,7 @@ left: 217px;
 .ccar {
   position: absolute;
   left: 125px;
-  top: 150px;
+  top: 205px;
 }
 .walking p {
   font-size: 16px;
@@ -1077,6 +1077,13 @@ input::placeholder {
   background-color: #B08760;
   border: none;
   cursor: pointer;
+}
+.submit a {
+  color: white;
+}
+.submit a:hover {
+    color: #B08760;
+  transition: 300ms color ease;
 }
 .submit:hover {
   background-color: #B12634;
